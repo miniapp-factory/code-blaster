@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Ship } from "@/components/ship";
+import { CodeIndicator } from "@/components/code-indicator";
 
 export function Jet() {
   const [code, setCode] = useState("");
@@ -15,11 +17,9 @@ export function Jet() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4">
-      <div className="w-64 h-64 bg-gray-800 rounded-lg flex items-center justify-center text-white">
-        {/* Placeholder for the jet and bugs */}
-        <span>🚀 Jet</span>
-      </div>
+    <div className="flex flex-col items-center gap-4 relative h-64">
+      <Ship />
+      <CodeIndicator />
       <input
         type="text"
         value={code}

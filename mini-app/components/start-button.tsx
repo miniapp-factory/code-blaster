@@ -1,11 +1,12 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { useRouter } from 'next/navigation';
 
 export function StartButton() {
+  const router = useRouter();
   const handleStart = () => {
-    // TODO: start the game logic
-    console.log("Game started");
+    router.push('/level-1');
   };
 
   return (

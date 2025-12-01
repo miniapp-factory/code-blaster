@@ -9,7 +9,7 @@ export function StartButton() {
   };
 
   return (
-    <Button onClick={handleStart} variant="primary" size="lg">
+    <Button onClick={handleStart} variant="default" size="lg">
       Start Game
     </Button>
   );

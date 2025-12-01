@@ -1,3 +1,3 @@
-export const title = "Mini App Factory App";
-export const description = "This app was created by the Mini App Factory!";
+export const title = "Typing Code Fighter";
+export const description = "A retro‑future neon typing shooter where you battle glitch monsters by typing code snippets.";
 export const url = process.env.NEXT_PUBLIC_URL;
